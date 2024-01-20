@@ -240,4 +240,264 @@ console.log(a)*/
 //     // code executed anyway
 // }
 // import greetings from "./greetings.js";
-// console.log(greetings("kumanan"))
+// console.log(greetings("kumanan"))s
+// assigning object attributes to variables
+
+// let add = (x = 1,y = 2) => {
+//     let b= x+y
+//     return b;
+// }
+// console.log(add(5))
+
+// let greet = x => console.log(x)
+// greet("wlcome to my class")
+// let age =20 
+// let greets = (age>20)?
+// ()=>console.log('adult'):
+// ()=>console.log('baby')
+// greets()
+
+// function person(){
+//     this.name='kumanan'
+//     this.age=45,
+//     this.sayme = ()=> {
+//         return (this.age)
+//     }
+// }
+// const Person =new person()
+// Person.sayme()
+
+// let x =(...x)=> {
+//     console.log(x)
+// }
+// x(1,2,3)
+
+// let data = function() {
+//     console.log("hello")
+// }
+// let Data = new data(); 
+
+// let name ="kumanan"
+// const result = `hello ${name}`
+// console.log(result)
+// spread operator 
+// const arr =[1,2,3,4,6]
+// const arr2 =[9,6,8]
+// let arr3=[...arr,...arr2]
+// console.log(arr3)
+// ...spread ...functional arguments rest
+
+// const person ={
+//     name :'kumanan',
+//     age:25,
+//     gender:"male"
+// }
+// // // destructuring
+// let {name, ...rest } = person
+// console.log(name,rest)
+
+// console.log(name)
+// console.log(age)
+// console.log(name1)
+
+// let arrvalues=[10,6]
+// let [x=5, y=7] =arrvalues
+// console.log(x)
+// console.log(y)
+
+// const object={name:'kumanan',age:25}
+// const object2 ={names:'vimal',ages:25}
+// let object3={...object,...object2}
+// console.log(object3)
+
+// let x = 9;
+// let y = 10;
+
+// [x,y] = [y,x]
+
+// console.log(x)
+// console.log(y)
+
+// const arrvalues=[1,2,3]
+// const [a,...c] =arrvalues
+// console.log(a,c)
+
+// const map1 =new Map()
+// map1.set('name',{myname:'kumanan',myage:25})
+// map1.set('year',2005)
+// console.log(map1.get('year'))
+// console.log(map1.has('year'))
+// // map1.delete('year')
+// console.log(map1.size)
+// console.log(map1)
+
+// for (let key of map1.values()){
+//     console.log(key)
+// }
+
+// map1.forEach(function(val,key){
+//     console.log(val,key)
+// })
+//  get() set() has() values() enteries() keys()
+
+// const weakmap = new WeakMap();
+// console.log(weakmap)
+// let obj ={}
+// weakmap.set(obj,"hello")
+
+// for (let i of weakmap){
+//     console.log(i)
+// }
+
+// set
+
+// const set = new Set()
+// console.log(set)
+
+// const set2 = new Set([1,2,2,3,4,5])
+// console.log(set2.values())
+// console.log(set2.has(3))
+// set2.add(8)
+// console.log(set2)
+
+// for (let i of set2){
+//     console.log(i)
+// }// for (let i of weakmap){
+//     console.log(i)
+// }
+
+// const weakmap = new WeakSet();
+// console.log(weakmap)
+// let obj ={name:'tamil'}
+// weakmap.add(obj)
+
+// for (let i of weakmap){
+//     console.log(i)
+// }
+
+// function union(a,b){
+//     let intersectionSet =new Set()
+//     for (let i of b){
+//         if (set1.has(i)){
+//             intersectionSet.add(i)
+//         }
+// //   console.log(i)
+//     }
+//     return intersectionSet
+// }
+// let set1 =new Set(['mango','orange','banana'])
+// let set2 =new Set(['grapes','pomogranate','jackfruit' ,'banana'])
+// console.log(set1,set2)
+// console.log(union(set1,set2))
+
+// class is a blueprint of an object 
+
+// function House (){
+//     this.window ='small size'
+//     this.door ='Big size door'
+// }
+// const myhouse = new House()
+// console.log(myhouse.door)
+// console.log(myhouse.window)
+
+// class House{
+//     constructor(){
+//         this.window ='small size'
+//         this.door ='Big size door'
+//     }
+// }
+// const house = new House()
+// console.log(house.door)
+// console.log(house.window)
+
+// methods
+// function House (){
+//     this.window ='small size'
+//     this.door ='Big size door'
+//     this.greet =function(){
+//         return ('Welcome to my home')
+//     }
+// }
+// const myhouse = new House()
+// console.log(myhouse.door)
+// console.log(myhouse.window)
+// console.log(myhouse.greet())
+
+// class House{
+//     constructor(){
+//         this.window ='small size'
+//         this.door ='Big size door'
+//     }
+
+//     greet(){
+//         return ('Welcome to my home')
+//     }
+
+//     get greetname(){
+//         return this.window
+//     }
+//     set greetname(x){
+//         return  this.window=x
+//     }
+// }
+// const house = new House()
+// console.log(house.door)
+// console.log(house.window)
+// console.log(house.greet())
+// house.greetname ='big size window'
+// console.log(house.greetname)
+
+// inheritance 
+// enable functionalites properties from parent class to child class
+
+// class House{
+//     constructor(){
+//         this.window ='small size'
+//         this.door ='Big size door'
+//     }
+
+//     greet(){
+//         return ('Welcome to my home')
+//     }
+
+//     get greetname(){
+//         return this.window
+//     }
+//     set greetname(x){
+//         return  this.window=x
+//     }
+// }
+
+// class NewHouse extends House{
+//     greet(){
+//         return ('Welcome to my newhouse')
+//     }
+// }
+// const house = new House()
+// console.log(house.door)
+// console.log(house.window)
+// console.log(house.greet())
+// house.greetname ='big size window'
+// console.log(house.greetname)
+
+// const newhouse = new NewHouse()
+// console.log(newhouse.greet())
+
+// overriding
+
+// inheritance:
+// functionalities of parents class in child class
+// code clean maintain , code reuse 
+// child class can create its own functionalities and 
+// // even can change its parent functionalities
+// class house{}
+// console.log(typeof(house))
+
+// for of  ES
+// const students =['Hareesh','jaya','keerthana','dishanth']
+// for (let i of students){
+//     console.log(i)
+// }
+
+// iterable objects --> map, array ,set  for in 
+// for of loop non iterable --> object keys 
