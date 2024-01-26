@@ -501,3 +501,111 @@ console.log(a)*/
 
 // iterable objects --> map, array ,set  for in 
 // for of loop non iterable --> object keys 
+
+// javascript Asynchronous
+// async ---> multi thread -->parallel
+// sync ---> single thread
+
+// set timeout
+// function hello(name){
+//     console.log(`welcome to my class MR ${name}`)
+// }
+// function bye(){
+//     console.log(" i will execute last")
+// }
+// setTimeout(bye,6000)
+// setTimeout(hello,4000,'kumanan')
+// console.log("i will execute first ")
+// function showtime(){
+//     let date= new Date()
+//     let time = date.toLocaleTimeString()
+//     console.log(time)
+    // setTimeout(showtime,3000)
+// }
+// setInterval(showtime,3000)
+// showtime()
+
+// function startme(name){
+//     console.log("hi"+ name)
+// }
+
+// function callme(){
+//     console.log("i am called")
+//     startme('peter')
+// }
+
+// setTimeout(callme,2000,'kumanan',startme)
+// promise
+// Pending ,rejected ,fullfilled
+
+// let promise = new Promise(function(resolve,reject){
+//     if (true){
+//         resolve("this is the resolve")
+//     }else{
+//         reject("this is the reject")
+//     }
+// })
+
+// promise.then(function success(result){
+//     console.log(result)
+// }).catch(function reject(result){
+//     console.log(result)
+// }).finally(function re(){
+//     console.log("i am always executed")
+// })
+
+// setInterval()
+// function greet(){
+//     console.log("hello world")
+// }
+// setInterval(greet,2000)
+
+// asyc await
+
+// let promise = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         reject("promise resolved")
+//     },4000)
+// })
+// async function myfunction(){
+//     console.log("hello1")
+//     try {
+//         let result = await promise;
+//         console.log(result)
+//         console.log("hello2")
+//     } catch (error) {
+//         console.log(error)
+//     }
+
+// }
+// myfunction()
+
+// JSON
+// const data = {
+//     "name":"kumanan",
+//     "age":43
+// }
+// console.log(data['age'])
+// const date = new Date(2022,1,20,1,12,12)
+// console.log(date)
+
+// javascript date methords or functions 
+// const time =new Date
+// const date = time.getDate()
+// const date = time.getTime()
+// const date = time.getFullYear()
+// const date = time.getMonth()
+// const date = new Date(2023,14,35)
+// console.log(date)
+ 
+// regular exression -->regex
+
+// const string = 'find me'
+// const pattern = /[\s,]+/
+// const res =string.split(pattern)
+// console.log(res)
+// const a=5
+// const b=10
+// const c =a+b
+// debugger
+// console.log(c)
